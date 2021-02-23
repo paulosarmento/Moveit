@@ -1,9 +1,9 @@
 import express from "express";
-
+import "./database";
 const app = express();
 
 app.get("/users", (req, res) => {
-  return res.send({ message: "hello world" });
+  return res.send({ message: "Hello world" });
 });
 
 app.post("/", (req, res) => {
